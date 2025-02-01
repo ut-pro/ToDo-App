@@ -1,0 +1,123 @@
+/* General styles */
+* {
+  font-family: "Parkinsans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #66785f;
+}
+
+/* Input section styles */
+#input-section {
+  width: 40%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  font-size: 22px;
+  font-weight: 900;
+  flex-direction: column;
+}
+
+input {
+  border: 0;
+  padding: 8px 20px;
+  margin: 10px 0px;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border: 0;
+  background-color: #bec1c7;
+}
+
+input[type="button"] {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    background-color: #596070;
+  }
+}
+
+/* Output section styles */
+#border {
+  width: 60%;
+  padding: 2%;
+  display: none;
+  margin-top: 2%;
+  background-color: #685752;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#output-section {
+  height: auto;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#output-section > ul > li {
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li > span > .fa-solid {
+  padding: 4px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  &:hover {
+    font-size: 35px;
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  form {
+    font-size: 16px;
+  }
+
+  #border {
+    width: 80%;
+  }
+
+  #output-section > ul > li {
+    margin-left: -20px;
+    font-size: 17px;
+  }
+
+  li > span > .fa-solid {
+    padding: 0px;
+    font-size: 16px;
+    margin: 0px 2px;
+    &:hover {
+      font-size: 19px;
+    }
+  }
+}
